@@ -70,8 +70,6 @@ python3 -m http.server 80
 
 4. Entramos en el cmd de l escritorio remoto
 
-IMAGEN 3
-
 ```bash
 ssh -L 8080:localhost:80 root@10.0.0.11
 ```
@@ -79,6 +77,8 @@ ssh -L 8080:localhost:80 root@10.0.0.11
 ## Ejercicio 4: Acceso privado tras NAT
 
 Queremos poder acceder a un dispositivo que está en nuestra clase. Crea un tunel que nos permita accederlo desde el VPS cuando estemos en casa.
+
+ssh -R 1337:localhost:22 root@172.233.116.8
 
 ## Ejercicio 5: Logs remotos
 
