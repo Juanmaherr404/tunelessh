@@ -31,6 +31,8 @@ mufw allow 80
  ssh -R 80:localhost:8000 root@172.233.96.224
 ```
 
+![Ejercicio 1](./ejer1.png)
+
 ## Ejercicio 2: Traer un servicio público a tu local
 
 Trae un servidor web a tu máquina local a través de un tunel SSH. Por ejemplo, un servidor web que esté escuchando en el puerto 80 de tu VPS.
@@ -47,6 +49,8 @@ python3 -m http.server 80
 ssh -L 8080:localhost:80 root@172.233.96.224
 ```
 
+![Ejercicio 2](./ejer2.png)
+
 ## Ejercicio 3: Remote Desktop a través de tunel SSH
 
 En esta práctica necesitarás un VPS publico y un VPS privado, ambos conectados a una red VNC.
@@ -61,6 +65,8 @@ Lanza un servicio de escritorio remoto en el VPS privado y utiliza un tunel SSH 
 python3 -m http.server 80
 ```
 3. Accedemos a VPS Público con el hosts por "remmina"
+
+![Ejercicio 3](./ejer3.png)
 
 4. Entramos en el cmd de l escritorio remoto
 
