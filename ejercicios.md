@@ -78,7 +78,25 @@ ssh -L 8080:localhost:80 root@10.0.0.11
 
 Queremos poder acceder a un dispositivo que está en nuestra clase. Crea un tunel que nos permita accederlo desde el VPS cuando estemos en casa.
 
-ssh -R 1337:localhost:22 root@172.233.116.8
+1. Abrimos un tunel al VPS desde el dispositivo (tenemos que poner el puerto del ssh en mi caso el 22)
+
+```bash
+ssh -R 2000:localhost:22 root@172.233.116.217
+```
+
+2. Entramos desde nuestro hosts al VPS
+
+```bash
+ssh USUARIO@localhost 
+```
+
+3. YA ACCEDERIAMOS AL DISPOSITIVO ATRAVÉS DE SSH
+
+```bash
+ssh USUARIO@localhost -p 2000 
+```
+
+![Ejercicio 4](./ejer4.png)
 
 ## Ejercicio 5: Logs remotos
 
